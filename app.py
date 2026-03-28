@@ -30,7 +30,7 @@ export default function App() {
   const downloadItem = async (item, index) => {
     updateStatus(index, "downloading");
 
-    const res = await fetch("https://YOUR-RENDER-URL.onrender.com/download", {
+    const res = await fetch("https://mp3-yt-j2lu.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ url: item.url, bitrate })
